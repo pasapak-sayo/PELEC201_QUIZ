@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>STUDENT ENROLLMENT FORM</h1>
+    </header>
+
+    <div class="instruction-frame">
+        <h3>Instruction:</h3>
+        <ol>
+            <li>Fill in the form fields.</li>
+            <li>Check your interests.</li>
+            <li>Click "Enroll Now" to submit.</li>
+        </ol>
+    </div>
+
+    <div class="form-frame">
+        <form action="#">
+            <div class="form-group">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required placeholder="Enter your Full Name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your Email Address">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age">
+            </div>
+
+            <div class="form-group">
+                <label>Sex:</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="sex" value="Male" required> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="sex" value="Female" required> Female
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Select your Course</option>
+                    <option value="BSIT">BSIT</option>
+                    <option value="BSSW">BSSW</option>
+                    <option value="BSPA">BSPA</option>
+                    <option value="BSCS">BSCS</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Interests:</label>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="interests" value="Web Development"> Web Development
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="Data Science"> Data Science
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="Networking"> Networking
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="Graphic Design"> Graphic Design
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit">Enroll Now</button>
+        </form>
+    </div>
+
+    <div class="table-frame">
+        <h3>Student Data</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Course</th>
+                    <th>Interests</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Paul Naynes</td>
+                    <td>johnnaynes2021@gmail.com</td>
+                    <td>19</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Web Development, Networking</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jemiah Vill</td>
+                    <td>Cooloath@yahoo.com</td>
+                    <td>96</td>
+                    <td>Female</td>
+                    <td>BSCS</td>
+                    <td>Networking, Graphic Design</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Louejie Lusantas</td>
+                    <td>lojulus@yahoo.com</td>
+                    <td>20</td>
+                    <td>Male</td>
+                    <td>BSCS</td>
+                    <td>Data Science, Graphic Design</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Jesiee Momps Jr.</td>
+                    <td>asteroiddestroyer@gmail.com</td>
+                    <td>69</td>
+                    <td>Female</td>
+                    <td>BSIT</td>
+                    <td> Web Development, Data Science</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Quert Kneejah</td>
+                    <td>Kneighbor@gmail.com</td>
+                    <td>18</td>
+                    <td>Male</td>
+                    <td>BSPA</td>
+                    <td>Networking</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
